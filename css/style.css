@@ -671,27 +671,67 @@ button:hover {
         max-width: 968px;
     }
 
+    .intro{
+        padding-bottom: 119px;
+        background-position: 50% 100%;
+    }
+
+    .header-logo {
+        margin-right: 74px;
+    }
+
     .intro h1 {
-        width: 70%;
-
+        padding-top: 98px;
+        margin-bottom: 54px;
     }
 
-    .statistics-title {
-        font-size: 27px;
-        line-height: 1;
+
+    .header__text{
+        margin-bottom: 59px;
     }
 
-    .intro {
-        background-position-x: center;
+
+    header a{
+        font-size: 13px;
+        line-height: 1.2;
+    }
+
+    .header-nav__link {
+        margin-right: 46px;
+    }
+
+    .statistics{
+        padding-top: 95px;
+        padding-bottom: 104px;
+    }
+
+    .statistics-items {
+        grid-column-gap: 148px;
+        grid-row-gap: 72px;
+        margin: 0 auto;
+        width: 890px;
     }
 
     .statistics-items {
         grid-template-columns: repeat(2, 1fr);
-
     }
 
-    .statistics-items__item {
-        grid-column-gap: 18px;
+    .myths{
+        padding-top: 91px;
+    }
+
+    .myths-item {
+        display: grid;
+        grid-template-columns: 438px 1fr;
+        grid-column-gap: 90px;
+    }
+
+    .bottom-text{
+        width: 80%;
+    }
+
+    .next-1{
+        margin-left: 70%;
     }
 
     .myths .item-text__title {
@@ -702,6 +742,40 @@ button:hover {
         font-size: 27px;
         line-height: 1;
     }
+
+    .none {
+        display: none;
+    }
+
+    .myths {
+        padding-bottom: 97px;
+    }
+
+    .action-item{
+        padding-top: 91px;
+        padding-bottom: 82px;
+    }
+
+    .clinic .main-caption{
+        width: 630px;
+        margin:  0 auto;
+        margin-bottom: 46px;
+    }
+
+    .clinic-item {
+        grid-template-columns: 460px 1fr;
+        grid-column-gap: 76px;
+    }
+
+    .clinic {
+        padding-bottom: 92px;
+    }
+
+    .conditions__caption{
+        margin-bottom: 19px;
+    }
+
+
 }
 
 @media screen and (max-width: 1023px) {
@@ -709,17 +783,88 @@ button:hover {
         display: none;
     }
 
+    .intro,.statistics,.myths,.action-section,.clinic,.footer{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
     .container {
-        max-width: 730px;
+        max-width: 100%;
     }
 
     .intro h1 {
-        width: 100%;
-        font-size: 1.731cm;
+        font-size: 50px;
+        line-height: 58px;
+        font-weight: 700;
+        color: #ffffff;
+        padding-top: 101px;
+        margin-bottom: 44px;
+    }
+
+    .header__text{
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: 400;
+        color: #ffffff;
+        width: 350px;
+        margin-bottom: 51px;
+    }
+
+    .header__promocode-text{
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: 400;
+        color: #ffffff;
+    }
+
+    .promocode{
+        font-weight: 700;
+        letter-spacing: -0.025em;
+        color: #f8485e;
+    }
+
+    .intro{
+        padding-bottom: 110px;
+    }
+
+    .statistics{
+        padding-top: 83px;
+        padding-bottom: 103px;
     }
 
     .statistics-items {
         grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        grid-column-gap: 52px;
+        grid-row-gap: 51px;
+    }
+
+    .item-img svg {
+        width: 74px;
+        height: 74px;
+    }
+
+    .text-tittle{
+        font-size: 28px;
+        line-height: 28px;
+        font-weight: 600;
+        color: #000000;
+    }
+
+    .text__content{
+        font-size: 17.6px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #000000;
+    }
+
+    .statistics .main-caption{
+        margin-bottom: 61px;
+    }
+
+    .statistics-items__item{
+        grid-template-columns: 74px 1fr;
+        align-items: center;
     }
 
     .myths-item {
@@ -731,15 +876,19 @@ button:hover {
     }
 
     .myths-number {
-        width: 9% !important;
+        width: 60px;
     }
 
     .myths .item-text__title {
         justify-content: flex-start;
     }
 
-    .myths .item-text__title p {
-        width: 41%;
+    .myth-1 .item-text .item-text__title .myths-text {
+        width: 410px;
+    }
+
+    .myths .main-caption {
+        margin-bottom: 12px;
     }
 
     .next-1 {
@@ -776,6 +925,11 @@ button:hover {
         flex-flow: wrap;
         text-align: center;
         justify-content: center;
+    }
+
+    .flex{
+        flex-direction: column-reverse;
+        display: flex;
     }
 }
 
