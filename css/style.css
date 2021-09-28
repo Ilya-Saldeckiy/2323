@@ -46,9 +46,98 @@ h1, h2, h3, p {
     top: -10px;
 }
 
+.fixed-active{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding-top: 24px;
+    padding-bottom: 13px;
+    z-index: 5;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25)
+}
+
+.fixed-active .logo{
+    display: none;
+}
+
+.fixed-active .second-logo{
+    max-width: 144px;
+    margin-right: 195px;
+}
+
+.fixed-active .menu-list-item:not(:last-child) {
+    margin-right: 98px;
+}
+
+.fixed-active .cart-number{
+    right: -8px;
+    top: -9px;
+}
+
+.fixed-active .header-logo{
+    margin-right: 0;
+}
+
+.second-logo{
+    display: none;
+}
+
+.fixed-active .second-logo{
+    display: block;
+    margin-bottom: 0;
+}
+
+.fixed-active .header-phone-position{
+    top: -4px;
+    margin-right: 56px;
+}
+
+.fixed-active .cart-btn{
+    top: 0;
+}
+
+.fixed-active .nav{
+    margin-top: -10px;
+}
+
+.fixed-active .header-nav{
+    padding-top: 5px;
+}
+
+.fixed-active .second-logo img{
+    max-width: 144px;
+}
+
+.fixed-active .header-nav__link{
+    margin-right: 77px;
+}
+
+.fixed-active .header-tel a{
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #777777;
+}
+
+.fixed-active a{
+    color: #777777;
+}
+
+.fixed-active .header-nav a:hover{
+    color: #777;
+    border-bottom: none;
+}
+
+.fixed-close{
+    position: relative;
+}
+
 header {
-    /*position: fixed;*/
-    /*top: 0;*/
+    position: relative;
+    top: 0;
     width: 100%;
     background-color: rgb(0, 53, 148);
     padding-top: 32px;
@@ -336,6 +425,7 @@ header a {
 
 .btn {
     text-align: center;
+    margin: 0 auto;
     margin-top: 90px;
 
 }
@@ -790,6 +880,18 @@ header a {
     transform-origin: bottom;
 }
 
+.mr-b{
+    margin-bottom: 88px;
+}
+
+header{
+    padding-bottom: 18px;
+}
+
+.intro h1{
+    padding-top: 113px;
+}
+
 @media screen and (max-width: 1279px) {
     .container {
         max-width: 968px;
@@ -812,6 +914,18 @@ header a {
 
     .header__text{
         margin-bottom: 59px;
+    }
+
+    .fixed-active .second-logo{
+        margin-right: 88px;
+    }
+
+    .fixed-active .nav{
+        margin-top: 0;
+    }
+
+    .fixed-active .menu-list {
+        padding-top: 5px;
     }
 
 
@@ -907,8 +1021,29 @@ header a {
         padding-right: 16px;
     }
 
+    .fixed-active{
+        padding-right: 16px;
+    }
+
     .container {
         max-width: 100%;
+    }
+
+    .fixed-active .second-logo{
+        margin-right: auto;
+    }
+
+    .fixed-active .header-logo{
+        position: relative;
+    }
+
+    .fixed-active .header-tel{
+        margin-left: auto;
+    }
+
+    .fixed-active .header-tel a {
+        position: relative;
+        top: 5px;
     }
 
     .intro h1 {
@@ -1068,9 +1203,10 @@ header a {
     }
 
     .header-logo {
-        position: absolute;
-        left: 16px;
-        top: 0;
+        /*position: absolute;*/
+        /*left: 16px;*/
+        /*top: 0;*/
+        padding-left: 16px;
     }
 
     .header-tel a{
@@ -1150,6 +1286,12 @@ header a {
         width: 40px;
         height: 40px;
     }
+
+    .bottom-mark {
+        font-size: 25px;
+        width: 47px;
+        height: 42px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1170,6 +1312,22 @@ header a {
 
     .intro p {
         text-align: center;
+    }
+
+    .fixed-active{
+        padding-top: 16px;
+        padding-bottom: 5px;
+    }
+
+    .fixed-active .header-tel a {
+        font-size: 11px;
+        line-height: 1.2;
+        margin-right: 0px;
+    }
+
+    .fixed-active .header-tel a {
+        position: relative;
+        top: 0px;
     }
 
     .intro {
@@ -1683,8 +1841,8 @@ header a {
         margin-bottom: 35px;
     }
 
-    .btn{
-        margin-top: 20px;
+    .btn {
+        margin-top: 49px;
     }
 
     .flex-btn{
@@ -1702,6 +1860,16 @@ header a {
     .adress-caption {
         margin-bottom: 0px;
     }
+
+    header{
+        padding-bottom: 26px;
+    }
+
+    .intro{
+        padding-top: 15px;
+    }
+
+
 
 
 }

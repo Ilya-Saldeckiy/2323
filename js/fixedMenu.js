@@ -1,0 +1,222 @@
+if( $(window).width() > 2840){
+    var scrolled;
+    window.onscroll = function() {
+        scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        if(scrolled > 650){
+            $(".header-section-fixed").addClass("fixed-active")
+        }
+        if(650 > scrolled){
+            $(".header-section-fixed").removeClass("fixed-active")
+        }
+        if(scrolled > 4250){
+            $(".header-section-fixed").addClass("fixed-close")
+        }
+        if(scrolled < 4250){
+            $(".header-section-fixed").removeClass("fixed-close")
+        }
+    }
+} else
+if($(window).width()> 1900){
+    var scrolled;
+    window.onscroll = function() {
+        scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        if(scrolled > 650){
+            $(".header-section-fixed").addClass("fixed-active")
+        }
+        if(650 > scrolled){
+            $(".header-section-fixed").removeClass("fixed-active")
+        }
+        if(scrolled > 4250){
+            $(".header-section-fixed").addClass("fixed-close")
+        }
+        if(scrolled < 4250){
+            $(".header-section-fixed").removeClass("fixed-close")
+        }
+    }
+} else
+if( $(window).width() > 1600){
+    var scrolled;
+    window.onscroll = function() {
+        scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        if(scrolled > 80){
+            $(".header-section-fixed").addClass("fixed-active")
+        }
+        if(80 > scrolled){
+            $(".header-section-fixed").removeClass("fixed-active")
+        }
+        if(scrolled > 4450){
+            $(".header-section-fixed").addClass("fixed-close")
+        }
+        if(scrolled < 4450){
+            $(".header-section-fixed").removeClass("fixed-close")
+        }
+    }
+} else
+if($(window).width()> 1400){
+    var scrolled;
+    window.onscroll = function() {
+        scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        if(scrolled > 700){
+            $(".header-section-fixed").addClass("fixed-active")
+        }
+        if(700 > scrolled){
+            $(".header-section-fixed").removeClass("fixed-active")
+        }
+        if(scrolled > 4450){
+            $(".header-section-fixed").addClass("fixed-close")
+        }
+        if(scrolled < 4450){
+            $(".header-section-fixed").removeClass("fixed-close")
+        }
+    }
+} else
+if($(window).width()> 767){
+    var scrolled;
+    window.onscroll = function() {
+        scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        if(scrolled > 600){
+            $(".header-section-fixed").addClass("fixed-active")
+        }
+        if(600 > scrolled){
+            $(".header-section-fixed").removeClass("fixed-active")
+        }
+        if(scrolled > 5450){
+            $(".header-section-fixed").addClass("fixed-close")
+        }
+        if(scrolled < 5450){
+            $(".header-section-fixed").removeClass("fixed-close")
+        }
+    }
+} else
+if($(window).width()> 400){
+    var scrolled;
+    window.onscroll = function() {
+        scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        if(scrolled > 600){
+            $(".header-section-fixed").addClass("fixed-active")
+        }
+        if(600 > scrolled){
+            $(".header-section-fixed").removeClass("fixed-active")
+        }
+        if(scrolled > 5050){
+            $(".header-section-fixed").addClass("fixed-close")
+        }
+        if(scrolled < 5050){
+            $(".header-section-fixed").removeClass("fixed-close")
+        }
+    }
+}
+else
+if($(window).width()> 330){
+    var scrolled;
+    window.onscroll = function() {
+        scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        if(scrolled > 550){
+            $(".header-section-fixed").addClass("fixed-active")
+        }
+        if(550 > scrolled){
+            $(".header-section-fixed").removeClass("fixed-active")
+        }
+        if(scrolled > 5250){
+            $(".header-section-fixed").addClass("fixed-close")
+        }
+        if(scrolled < 5250){
+            $(".header-section-fixed").removeClass("fixed-close")
+        }
+    }
+}
+else
+if($(window).width()> 319){
+    var scrolled;
+    window.onscroll = function() {
+        scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        if(scrolled > 550){
+            $(".header-section-fixed").addClass("fixed-active")
+        }
+        if(550 > scrolled){
+            $(".header-section-fixed").removeClass("fixed-active")
+        }
+        if(scrolled > 7100){
+            $(".header-section-fixed").addClass("fixed-close")
+        }
+        if(scrolled < 7100){
+            $(".header-section-fixed").removeClass("fixed-close")
+        }
+    }
+}
+
+(function(document, history, location) {
+    var HISTORY_SUPPORT = !!(history && history.pushState);
+
+    var anchorScrolls = {
+        ANCHOR_REGEX: /^#[^ ]+$/,
+        OFFSET_HEIGHT_PX: 110,
+
+        /**
+         * Establish events, and fix initial scroll position if a hash is provided.
+         */
+        init: function() {
+            this.scrollToCurrent();
+            $(window).on('hashchange', $.proxy(this, 'scrollToCurrent'));
+            $('body').on('click', 'a', $.proxy(this, 'delegateAnchors'));
+        },
+
+        /**
+         * Return the offset amount to deduct from the normal scroll position.
+         * Modify as appropriate to allow for dynamic calculations
+         */
+        getFixedOffset: function() {
+            return this.OFFSET_HEIGHT_PX;
+        },
+
+        /**
+         * If the provided href is an anchor which resolves to an element on the
+         * page, scroll to it.
+         * @param  {String} href
+         * @return {Boolean} - Was the href an anchor.
+         */
+        scrollIfAnchor: function(href, pushToHistory) {
+            var match, anchorOffset;
+
+            if(!this.ANCHOR_REGEX.test(href)) {
+                return false;
+            }
+
+            match = document.getElementById(href.slice(1));
+
+            if(match) {
+                anchorOffset = $(match).offset().top - this.getFixedOffset();
+                $('html, body').animate({ scrollTop: anchorOffset});
+
+                // Add the state to history as-per normal anchor links
+                if(HISTORY_SUPPORT && pushToHistory) {
+                    history.pushState({}, document.title, location.pathname + href);
+                }
+            }
+
+            return !!match;
+        },
+
+        /**
+         * Attempt to scroll to the current location's hash.
+         */
+        scrollToCurrent: function(e) {
+            if(this.scrollIfAnchor(window.location.hash) && e) {
+                e.preventDefault();
+            }
+        },
+
+        /**
+         * If the click event's target was an anchor, fix the scroll position.
+         */
+        delegateAnchors: function(e) {
+            var elem = e.target;
+
+            if(this.scrollIfAnchor(elem.getAttribute('href'), true)) {
+                e.preventDefault();
+            }
+        }
+    };
+
+    $(document).ready($.proxy(anchorScrolls, 'init'));
+})(window.document, window.history, window.location);
