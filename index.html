@@ -13,6 +13,7 @@
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=c2fc0934-a636-4729-ac44-d9d57b1ceb36"
             type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
     <script src="/local/js/jquery-3.4.1.min.js"></script>
     <script src="/local/js/iquery-ui.js"></script>
@@ -51,7 +52,7 @@
             </span>
         </p>
     </div>
-    <img src="img/header_bg_mob.png" alt="" class="intro-bg">
+<!--    <img src="img/header_bg_mob.png" alt="" class="intro-bg">-->
 </div>
 <div class="statistics" id="statistics">
     <div class="container">
@@ -319,7 +320,7 @@ l14.3-18.5c0.5-0.7,1.4-0.8,2.1-0.3c0.7,0.5,0.8,1.4,0.3,2.1L59.3,60.1C59,60.5,58.
             </div>
             <div class="statistics-items__item">
                 <div>
-                    <p class="item-text-description">* Согласно данным <a href="#">ЮНЭЙДС</a>, <a href="#">Интерфакс</a>.</p>
+                    <p class="item-text-description">* Согласно данным <a href="https://www.unaids.org/ru" target="_blank">ЮНЭЙДС</a>, <a href="https://www.interfax.ru/" target="_blank">Интерфакс</a>.</p>
                 </div>
             </div>
         </div>
@@ -332,12 +333,16 @@ l14.3-18.5c0.5-0.7,1.4-0.8,2.1-0.3c0.7,0.5,0.8,1.4,0.3,2.1L59.3,60.1C59,60.5,58.
         </div>
         <div class="myths-item myth-1">
             <div class="item-text">
-                <div class="item-text__title">
+                <div class="item-text__title position__mobile">
                     <p class="myths-number">1 <span>МИФ</span></p>
                     <p class="myths-text">ВИЧ-инфекция – болезнь наркоманов</p>
                 </div>
                 <div class="flex">
-                    <div>
+                    <div class="flex-div">
+                        <div class="item-text__title">
+                            <p class="myths-number">1 <span>МИФ</span></p>
+                            <p class="myths-text">ВИЧ-инфекция – болезнь наркоманов</p>
+                        </div>
                         <div class="item-text__subtitle">
                             <h3 class="subtitle__caption">РЕАЛЬНОСТЬ</h3>
                             <p>В 2018 году половой путь передачи ВИЧ-инфекции регистрировался более чем в 60% всех новых
@@ -367,213 +372,267 @@ l14.3-18.5c0.5-0.7,1.4-0.8,2.1-0.3c0.7,0.5,0.8,1.4,0.3,2.1L59.3,60.1C59,60.5,58.
         </div>
         <div class="myths-item myth-2 none">
             <div class="item-text">
-                <div class="item-text__title">
+                <div class="item-text__title position__mobile">
                     <p class="myths-number">2<span>МИФ</span></p>
                     <p class="myths-text">ВИЧ-инфекцией можно заразиться в любом общественном месте</p>
                 </div>
-                <div class="item-text__subtitle">
-                    <h3 class="subtitle__caption">РЕАЛЬНОСТЬ</h3>
-                    <p>ВИЧ-инфекцией невозможно заразиться воздушно-капельным, водным, контактно-бытовым путем, через
-                        пользование общей посудой, общим туалетом, транспортом, при посещении школы, во время
-                        спортивных игр, плавания в бассейне, рукопожатия, объятия, при поцелуях. При укусах комаров
-                        заражение тоже не происходит, это установлено в крупномасштабных исследованиях.
-                        Инфицирование человека ВИЧ происходит при попадании биологических жидкостей, содержащих ВИЧ в
-                        максимальной концентрации (кровь, выделения половых органов и грудное молоко), в кровь или на
-                        слизистую оболочку.
-                    </p>
-                </div>
-                <div class="item-text__bottom">
-                    <div class="bottom-mark">
-                        !
+                <div class="flex">
+                    <div class="flex-div">
+                        <div class="item-text__title ">
+                            <p class="myths-number">2<span>МИФ</span></p>
+                            <p class="myths-text">ВИЧ-инфекцией можно заразиться в любом общественном месте</p>
+                        </div>
+                        <div class="item-text__subtitle">
+                            <h3 class="subtitle__caption">РЕАЛЬНОСТЬ</h3>
+                            <p>ВИЧ-инфекцией невозможно заразиться воздушно-капельным, водным, контактно-бытовым путем, через
+                                пользование общей посудой, общим туалетом, транспортом, при посещении школы, во время
+                                спортивных игр, плавания в бассейне, рукопожатия, объятия, при поцелуях. При укусах комаров
+                                заражение тоже не происходит, это установлено в крупномасштабных исследованиях.
+                                Инфицирование человека ВИЧ происходит при попадании биологических жидкостей, содержащих ВИЧ в
+                                максимальной концентрации (кровь, выделения половых органов и грудное молоко), в кровь или на
+                                слизистую оболочку.
+                            </p>
+                        </div>
+                        <div class="item-text__bottom">
+                            <div class="bottom-mark">
+                                !
+                            </div>
+                            <div class="bottom-text">
+                                <p class="text-bottom__item">ВИЧ не передается через комаров и при обычных бытовых контактах!</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="bottom-text">
-                        <p class="text-bottom__item">ВИЧ не передается через комаров и при обычных бытовых контактах!</p>
+                    <div class="item-img">
+                        <img src="img/2.png" alt="">
+                    </div>
                     </div>
                 </div>
+            <div class="flex-btn">
+                <div class="btn prev-2">
+                    <button>Предыдущий миф</button>
+                </div>
+                <div class="btn next-2">
+                    <button>Следующий миф</button>
+                </div>
             </div>
-            <div class="item-img">
-                <img src="img/2.png" alt="">
-            </div>
-
-            <div class="btn prev-2">
-                <button>Предыдущий миф</button>
-            </div>
-            <div class="btn next-2">
-                <button>Следующий миф</button>
-            </div>
-
         </div>
         <div class="myths-item myth-3 none">
             <div class="item-text">
-                <div class="item-text__title">
+                <div class="item-text__title position__mobile">
                     <p class="myths-number">3<span>МИФ</span></p>
                     <p class="myths-text">Дети, рожденные от ВИЧ-инфицированной матери тоже заражены ВИЧ</p>
                 </div>
-                <div class="item-text__subtitle">
-                    <h3 class="subtitle__caption">РЕАЛЬНОСТЬ</h3>
-                    <p>Если мать во время беременности своевременно пройдет обследование на ВИЧ и будет аккуратно
-                        принимать специальные антиретровирусные лекарства, назначенные ей врачом, а грудное
-                        вскармливание будет заменено искусственным, то риск заражения ВИЧ для ребенка составит менее 2%.
-                        Если эти профилактические меры не будут предприняты, то риск передачи ВИЧ от матери к младенцу
-                        составляет 15-30% при искусственном вскармливании. При грудном вскармливании он еще больше
-                        возрастет.
-                    </p>
-                </div>
-                <div class="item-text__bottom">
-                    <div class="bottom-mark">
-                        !
+                <div class="flex">
+                    <div class="flex-div">
+                        <div class="item-text__title">
+                            <p class="myths-number">3<span>МИФ</span></p>
+                            <p class="myths-text">Дети, рожденные от ВИЧ-инфицированной матери тоже заражены ВИЧ</p>
+                        </div>
+                        <div class="item-text__subtitle">
+                            <h3 class="subtitle__caption">РЕАЛЬНОСТЬ</h3>
+                            <p>Если мать во время беременности своевременно пройдет обследование на ВИЧ и будет аккуратно
+                                принимать специальные антиретровирусные лекарства, назначенные ей врачом, а грудное
+                                вскармливание будет заменено искусственным, то риск заражения ВИЧ для ребенка составит менее 2%.
+                                Если эти профилактические меры не будут предприняты, то риск передачи ВИЧ от матери к младенцу
+                                составляет 15-30% при искусственном вскармливании. При грудном вскармливании он еще больше
+                                возрастет.
+                            </p>
+                        </div>
+                        <div class="item-text__bottom">
+                            <div class="bottom-mark">
+                                !
+                            </div>
+                            <div class="bottom-text">
+                                <p class="text-bottom__item">У ВИЧ-инфицированных матерей, выполняющих рекомендации врачей, рождаются здоровые дети!</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="bottom-text">
-                        <p class="text-bottom__item">У ВИЧ-инфицированных матерей, выполняющих рекомендации врачей, рождаются здоровые дети!</p>
+                    <div class="item-img">
+                        <img src="img/3.png" alt="">
                     </div>
                 </div>
             </div>
-            <div class="item-img">
-                <img src="img/3.png" alt="">
-            </div>
-            <div class="btn prev-3">
-                <button>Предыдущий миф</button>
-            </div>
-            <div class="btn next-3">
-                <button>Следующий миф</button>
+            <div class="flex-btn">
+                <div class="btn prev-3">
+                    <button>Предыдущий миф</button>
+                </div>
+                <div class="btn next-3">
+                    <button>Следующий миф</button>
+                </div>
             </div>
         </div>
         <div class="myths-item myth-4 none">
             <div class="item-text">
-                <div class="item-text__title">
+                <div class="item-text__title position__mobile">
                     <p class="myths-number">4<span>МИФ</span></p>
                     <p class="myths-text">ВИЧ-инфекция – это смертельный приговор!</p>
                 </div>
-                <div class="item-text__subtitle">
-                    <h3 class="subtitle__caption">РЕАЛЬНОСТЬ</h3>
-                    <p>За 30 лет медицина достигла значительных результатов в борьбе против ВИЧ. Сегодня своевременно
-                        получаемая антиретровирусная терапия позволяет ВИЧ-инфицированному человеку прожить столько же,
-                        сколько живут люди без ВИЧ.
-                    </p>
-                </div>
-                <div class="item-text__bottom">
-                    <div class="bottom-mark">
-                        !
+                <div class="flex">
+                    <div class="flex-div">
+                        <div class="item-text__title">
+                            <p class="myths-number">4<span>МИФ</span></p>
+                            <p class="myths-text">ВИЧ-инфекция – это смертельный приговор!</p>
+                        </div>
+                        <div class="item-text__subtitle">
+                            <h3 class="subtitle__caption">РЕАЛЬНОСТЬ</h3>
+                            <p>За 30 лет медицина достигла значительных результатов в борьбе против ВИЧ. Сегодня своевременно
+                                получаемая антиретровирусная терапия позволяет ВИЧ-инфицированному человеку прожить столько же,
+                                сколько живут люди без ВИЧ.
+                            </p>
+                        </div>
+                        <div class="item-text__bottom">
+                            <div class="bottom-mark">
+                                !
+                            </div>
+                            <div class="bottom-text">
+                                <p class="text-bottom__item">ВИЧ – это не смертельно, если принять меры!
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="bottom-text">
-                        <p class="text-bottom__item">ВИЧ – это не смертельно, если принять меры!
-                        </p>
+                    <div class="item-img">
+                        <img src="img/4.png" alt="">
                     </div>
                 </div>
             </div>
-            <div class="item-img">
-                <img src="img/4.png" alt="">
-            </div>
-            <div class="btn prev-4">
-                <button>Предыдущий миф</button>
-            </div>
-            <div class="btn next-4">
-                <button>Следующий миф</button>
+            <div class="flex-btn">
+                <div class="btn prev-4">
+                    <button>Предыдущий миф</button>
+                </div>
+                <div class="btn next-4">
+                    <button>Следующий миф</button>
+                </div>
             </div>
         </div>
         <div class="myths-item myth-5 none">
             <div class="item-text">
-                <div class="item-text__title">
+                <div class="item-text__title position__mobile">
                     <p class="myths-number">5<span>МИФ</span></p>
                     <p class="myths-text">ВИЧ-инфицированный человек болен СПИДом</p>
                 </div>
-                <div class="item-text__subtitle">
-                    <h3 class="subtitle__caption">РЕАЛЬНОСТЬ</h3>
-                    <p>ВИЧ и СПИД – не одно и то же. СПИД (синдром приобретенного иммунодефицита) – это поздняя стадия
-                        ВИЧ-инфекции, которая развивается не у всех и не сразу. Человек, являющийся носителем вируса
-                        иммунодефицита человека может, никогда не заболеть СПИДом, если будет регулярно посещать врача и
-                        вовремя начнет принимать антиретровирусную терапию.
-                    </p>
-                </div>
-                <div class="item-text__bottom">
-                    <div class="bottom-mark">
-                        !
+                <div class="flex">
+                    <div class="flex-div">
+                        <div class="item-text__title">
+                            <p class="myths-number">5<span>МИФ</span></p>
+                            <p class="myths-text">ВИЧ-инфицированный человек болен СПИДом</p>
+                        </div>
+                        <div class="item-text__subtitle">
+                            <h3 class="subtitle__caption">РЕАЛЬНОСТЬ</h3>
+                            <p>ВИЧ и СПИД – не одно и то же. СПИД (синдром приобретенного иммунодефицита) – это поздняя стадия
+                                ВИЧ-инфекции, которая развивается не у всех и не сразу. Человек, являющийся носителем вируса
+                                иммунодефицита человека может, никогда не заболеть СПИДом, если будет регулярно посещать врача и
+                                вовремя начнет принимать антиретровирусную терапию.
+                            </p>
+                        </div>
+                        <div class="item-text__bottom">
+                            <div class="bottom-mark">
+                                !
+                            </div>
+                            <div class="bottom-text">
+                                <p class="text-bottom__item">ВИЧ-инфицированный может никогда не заболеть СПИДом!
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="bottom-text">
-                        <p class="text-bottom__item">ВИЧ-инфицированный может никогда не заболеть СПИДом!
-                        </p>
+                    <div class="item-img">
+                        <img src="img/5.png" alt="">
                     </div>
                 </div>
             </div>
-            <div class="item-img">
-                <img src="img/5.png" alt="">
-            </div>
-            <div class="btn prev-5">
-                <button>Предыдущий миф</button>
-            </div>
-            <div class="btn next-5">
-                <button>Следующий миф</button>
+            <div class="flex-btn">
+                <div class="btn prev-5">
+                    <button>Предыдущий миф</button>
+                </div>
+                <div class="btn next-5">
+                    <button>Следующий миф</button>
+                </div>
             </div>
         </div>
         <div class="myths-item myth-6 none">
             <div class="item-text">
-                <div class="item-text__title">
+                <div class="item-text__title position__mobile">
                     <p class="myths-number">6<span>МИФ</span></p>
                     <p class="myths-text">Если сразу после сомнительного полового контакта анализы не показывают ВИЧ, значит, ты не
-                        заразился
-
-                    </p>
+                        заразился</p>
                 </div>
-                <div class="item-text__subtitle">
-                    <h3 class="subtitle__caption">РЕАЛЬНОСТЬ</h3>
-                    <p>Обычно ВИЧ-инфекция проявляется через 4-6 недель после заражения, и сдавать кровь на следующий
-                        день после незащищенной интимной близости бессмысленно. Чаще всего антитела к вирусу (которые мы
-                        обнаруживаем) у зараженного человека вырабатываются через 3 месяца, именно в это время нужно
-                        пройти тестирование на ВИЧ.
-                    </p>
-                </div>
-                <div class="item-text__bottom">
-                    <div class="bottom-mark">
-                        !
+                <div class="flex">
+                    <div class="flex-div">
+                        <div class="item-text__title">
+                            <p class="myths-number">6<span>МИФ</span></p>
+                            <p class="myths-text">Если сразу после сомнительного полового контакта анализы не показывают ВИЧ, значит, ты не
+                                заразился</p>
+                        </div>
+                        <div class="item-text__subtitle">
+                            <h3 class="subtitle__caption">РЕАЛЬНОСТЬ</h3>
+                            <p>Обычно ВИЧ-инфекция проявляется через 4-6 недель после заражения, и сдавать кровь на следующий
+                                день после незащищенной интимной близости бессмысленно. Чаще всего антитела к вирусу (которые мы
+                                обнаруживаем) у зараженного человека вырабатываются через 3 месяца, именно в это время нужно
+                                пройти тестирование на ВИЧ.
+                            </p>
+                        </div>
+                        <div class="item-text__bottom">
+                            <div class="bottom-mark">
+                                !
+                            </div>
+                            <div class="bottom-text">
+                                <p class="text-bottom__item">ВИЧ нельзя выявить сразу после заражения!
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="bottom-text">
-                        <p class="text-bottom__item">ВИЧ нельзя выявить сразу после заражения!
-                        </p>
+                    <div class="item-img">
+                        <img src="img/6.png" alt="">
                     </div>
                 </div>
             </div>
-            <div class="item-img">
-                <img src="img/6.png" alt="">
-            </div>
-            <div class="btn prev-6">
-                <button>Предыдущий миф</button>
-            </div>
-            <div class="btn next-6">
-                <button>Следующий миф</button>
+            <div class="flex-btn">
+                <div class="btn prev-6">
+                    <button>Предыдущий миф</button>
+                </div>
+                <div class="btn next-6">
+                    <button>Следующий миф</button>
+                </div>
             </div>
         </div>
         <div class="myths-item myth-7 none">
             <div class="item-text">
-                <div class="item-text__title">
+                <div class="item-text__title position__mobile">
                     <p class="myths-number">7<span>МИФ</span></p>
                     <p class="myths-text">О том, что у тебя ВИЧ можно понять через несколько дней после заражения по симптомам</p>
                 </div>
-                <div class="item-text__subtitle">
-                    <h3 class="subtitle__caption">РЕАЛЬНОСТЬ</h3>
-                    <p>Симптомы ВИЧ-инфекции на ранних стадиях проявляются не всегда и не у всех людей. Иногда у
-                        больного наблюдается повышение температуры и легкое недомогание, как во время простуды, которые
-                        быстро проходят. Многие даже не догадываются, что инфицированы, так как болезнь может
-                        развиваться в организме в течении 10 – 12 лет незаметно. Между заражением ВИЧ-инфекцией и
-                        стадией СПИДа проходит много лет, в течении которых болезнь медленно истощает иммунную систему.
-                    </p>
-                </div>
-                <div class="item-text__bottom">
-                    <div class="bottom-mark">
-                        !
+                <div class="flex">
+                    <div class="flex-div">
+                        <div class="item-text__title">
+                            <p class="myths-number">7<span>МИФ</span></p>
+                            <p class="myths-text">О том, что у тебя ВИЧ можно понять через несколько дней после заражения по симптомам</p>
+                        </div>
+                        <div class="item-text__subtitle">
+                            <h3 class="subtitle__caption">РЕАЛЬНОСТЬ</h3>
+                            <p>Симптомы ВИЧ-инфекции на ранних стадиях проявляются не всегда и не у всех людей. Иногда у
+                                больного наблюдается повышение температуры и легкое недомогание, как во время простуды, которые
+                                быстро проходят. Многие даже не догадываются, что инфицированы, так как болезнь может
+                                развиваться в организме в течении 10 – 12 лет незаметно. Между заражением ВИЧ-инфекцией и
+                                стадией СПИДа проходит много лет, в течении которых болезнь медленно истощает иммунную систему.
+                            </p>
+                        </div>
+                        <div class="item-text__bottom">
+                            <div class="bottom-mark">
+                                !
+                            </div>
+                            <div class="bottom-text">
+                                <p class="text-bottom__item">Болезнь может развиваться в организме бессимптомно в течение 10-12 лет!</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="bottom-text">
-                        <p class="text-bottom__item">Болезнь может развиваться в организме бессимптомно в течение 10-12 лет!</p>
+                    <div class="item-img">
+                        <img src="img/7.png" alt="">
                     </div>
                 </div>
-            </div>
-            <div class="item-img">
-                <img src="img/7.png" alt="">
             </div>
             <div class="buttons">
                 <div class="btn prev-7">
                     <button>Предыдущий миф</button>
                 </div>
-
             </div>
         </div>
     </div>
@@ -602,8 +661,8 @@ L386.4,775.4z"/>
                 </p>
             </div>
             <div class="action">
-                <h2 class="action__caption">Об акции «СТОП ВИЧ/СПИД»</h2>
-                <div class="action-img mob">
+                <h2 class="action__caption">Об акции <span class="nowrap">«СТОП ВИЧ/СПИД»</span></h2>
+                <div class="action-position-mob">
                     <svg width="140px" height="250px" viewBox="0 0 464.7 820">
                         <path fill="#F8485E" d="M462.1,643.3c-35.5-50.6-82.2-117.4-129.1-184.7l64.7-93.2c21.2-30.6,40.3-130.9-39.5-291.5
 c-0.3-0.6-0.7-1.1-1-1.6C334.8,24.6,283.3,0,232.2,0c-0.1,0-0.1,0-0.2,0c-51,0.1-102.5,24.8-124.7,72.5c-0.3,0.4-0.5,0.9-0.8,1.4
@@ -618,16 +677,16 @@ z M78.3,775.2L30.6,653.5c33-47.1,76.6-109.5,118.5-169.5c20.4,29.5,42.7,61.8,65.5
 C321.3,682.6,104.7,369.2,90.7,349c-11.8-17.1-27.8-79.2,9.4-186.4c2.9,11.6,7.4,21.8,13.3,30.6c11.6,17,262.2,376.9,320.7,460.3
 L386.4,775.4z"/>
                     </svg>
-                    <h3>1 декабря</h3>
-                    <p>
-                        Всемирный день борьбы со СПИДом
-                    </p>
+                    <div class="action-img-position-mob">
+                        <h3 class="under__image-caption">1 декабря</h3>
+                        <p class="under__image-text">Всемирный день борьбы со СПИДом</p>
+                    </div>
                 </div>
-                <p class="action__text">Центральный НИИ Эпидемиологии Роспотребнадзора проводит акцию "СТОП ВИЧ/СПИД" с&nbsp;2017&nbsp;года. За&nbsp;это
+                <p class="action__text">Центральный НИИ Эпидемиологии Роспотребнадзора проводит акцию "СТОП ВИЧ/СПИД" с&nbsp;2017 года. За&nbsp;это
                     время
                     более 18&nbsp;тысяч человек прошли анализ на&nbsp;ВИЧ бесплатно. Мы&nbsp;принимаем анализы и&nbsp;рассказываем о&nbsp;проблеме
                     распространения ВИЧ не&nbsp;только в&nbsp;наших офисах. CMD участовал в&nbsp;<span class="nowrap">2-х</span>&nbsp;ежегодных студенческих форумах
-                    "Остановим СПИД вместе" и&nbsp;просветительском фестивале Moscow Fem Fest. Акцию ежегодно поддерживают
+                    "Остановим СПИД вместе" и&nbsp;просветительском фестивале Moscow Fem Fest.Акцию ежегодно поддерживают
                     сотрудники Авторадио.
                 </p>
                 <h3 class="action-subtitle">Пройдите анализ самостоятельно и&nbsp;расскажите друзьям!</h3>
@@ -667,41 +726,59 @@ L386.4,775.4z"/>
         </div>
     </div>
 </div>
-<div class="map">
+<section id="map" class="section-adress">
     <div class="container">
-        <div id="clinic">
-            <h2 class="main-caption">Где пройти исследование</h2>
+        <h2 class="main-caption adress-caption">Где пройти исследование</h2>
+        <div class="adress-btn-border">
+            <div class="adress-btn-position horizontal-scroll-wrapper">
+                <div><button class="btn adress-btn btn-active" type="button"  data-path="first-map">Офисы CMD</button></div>
+                <div><button class="btn adress-btn" type="button"  data-path="second-map">Партнеры акции</button></div>
+            </div>
         </div>
-        <div class="map-subtitle">
-            <a href="" class="office active">Офисы CMD</a>
-            <a href="#" class="partners">Партнеры акции</a>
+        <div class="map-position map-active" data-target="first-map">
+            <div class="map" id="map-1"></div>
         </div>
-        <div class="map-item-1 block" id="map-1">
-
+        <div class="map-position" data-target="second-map">
+            <div class="map" id="map-2"></div>
         </div>
-        <div class="map-item-2 none" id="map-2">
-
-        </div>
-        <h3 id="action" class="conditions__caption">Условия акции</h3>
-        <p class="conditions__text">В акции участвует исследование <a href="https://www.cmd-online.ru/analizy-i-tseny/katalog-analizov/virus_immunodeficita_cheloveka_040601/?search=y" class="link" target="_blank">«040601 — Вирус иммунодефицита
-            человека (Human Immunodeficiency
-            Virus),
-            качественное суммарное определение антител к 1 и 2 типу вируса и антигена p24 anti-HIV1,2/Ag p24»</a>.
-        </p>
-        <p class="conditions__text"> Акция действует во всех медицинских центрах CMD и у партнеров акции.
-        </p>
-        <p class="conditions__text">Для участия в акции необходимо назвать промокод <span class="conditions__decoration-promo">#СТОПВИЧСПИД</span>. Не суммируется с другими скидками и акциями,
-            взятие биоматериала по акции бесплатно.</p>
-        <p class="conditions__text">Сроки действия акции: с 1 по 5 декабря 2021 года.</p>
-        <p class="conditions__text">Для сдачи биоматериала и получения официального результата необходимо иметь при себе паспорт. Результат
-            анализа можно получить в вашем офисе CMD.</p>
-        <p class="conditions__text"> Время приема биоматериала по акции в офисах CMD с 11.00 до конца рабочего дня офиса.
-        </p>
-        <p class="conditions__text"> Условия акции, графики работы партнеров уточняйте по их адресам и телефонам.
-        </p>
-
     </div>
-</div>
+</section>
+<!--<div class="map">-->
+<!--    <div class="container">-->
+<!--        <div id="clinic">-->
+<!--            <h2 class="main-caption">Где пройти исследование</h2>-->
+<!--        </div>-->
+<!--        <div class="map-subtitle">-->
+<!--            <a href="" class="office active">Офисы CMD</a>-->
+<!--            <a href="#" class="partners">Партнеры акции</a>-->
+<!--        </div>-->
+<!--        <div class="map-item-1 block" id="map-1">-->
+
+<!--        </div>-->
+<!--        <div class="map-item-2 none" id="map-2">-->
+
+<!--        </div>-->
+    <section class="section-conditions">
+        <div class="container">
+            <h3 id="action" class="conditions__caption">Условия акции</h3>
+            <p class="conditions__text">В акции участвует исследование <a href="https://www.cmd-online.ru/analizy-i-tseny/katalog-analizov/virus_immunodeficita_cheloveka_040601/?search=y" class="link" target="_blank">«040601 — Вирус иммунодефицита
+                человека (Human Immunodeficiency
+                Virus),
+                качественное суммарное определение антител к 1 и 2 типу вируса и антигена p24 anti-HIV1,2/Ag p24»</a>.
+            </p>
+            <p class="conditions__text"> Акция действует во всех медицинских центрах CMD и у партнеров акции.
+            </p>
+            <p class="conditions__text">Для участия в акции необходимо назвать промокод <span class="conditions__decoration-promo">#СТОПВИЧСПИД</span>. Не суммируется с другими скидками и акциями,
+                взятие биоматериала по акции бесплатно.</p>
+            <p class="conditions__text">Сроки действия акции: с 1 по 5 декабря 2021 года.</p>
+            <p class="conditions__text">Для сдачи биоматериала и получения официального результата необходимо иметь при себе паспорт. Результат
+                анализа можно получить в вашем офисе CMD.</p>
+            <p class="conditions__text"> Время приема биоматериала по акции в офисах CMD с 11.00 до конца рабочего дня офиса.
+            </p>
+            <p class="conditions__text"> Условия акции, графики работы партнеров уточняйте по их адресам и телефонам.
+            </p>
+        </div>
+    </section>
 <div class="footer">
     <div class="container">
         <div class="footer-items">
@@ -776,7 +853,14 @@ C29.827,16.121,30,17.931,30,20C30,22.069,29.741,23.88,29.655,24.741z"/>
         </div>
 
     </div>
+    <section class="footer-recomend recomend-text">
+        <div class="chesel-row">
+            <div>О возможных противопоказаниях необходимо проконсультироваться со&nbsp;специалистом</div>
+        </div>
+    </section>
 </div>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
 <script
         src="https://code.jquery.com/jquery-3.6.0.min.js"
