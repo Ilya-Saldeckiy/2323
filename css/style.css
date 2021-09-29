@@ -392,7 +392,7 @@ header a {
 
 .bottom-mark {
     border-radius: 50%;
-    border: 1px solid rgb(0, 53, 148);
+    border: 2px solid rgb(0, 53, 148);
     font-size: 29px;
     color: rgb(0, 53, 148);
     width: 48px;
@@ -892,6 +892,40 @@ header{
     padding-top: 113px;
 }
 
+.intro{
+    background-color: #003594;
+}
+
+.big__img-1 {
+    margin-bottom: 8px;
+}
+
+.small-img-1{
+    margin-right: 16px;
+}
+
+.img-row img:first-child {
+    width: 49%;
+}
+
+.footer{
+    padding-bottom: 68px;
+}
+
+.myths-number {
+    font-size: 84.1px;
+    line-height: 84px;
+}
+
+.myths .item-text__title{
+    align-items: flex-start;
+    margin-top: -4px;
+}
+
+.myths .item-text__title {
+    margin-bottom: 50px;
+}
+
 @media screen and (max-width: 1279px) {
     .container {
         max-width: 968px;
@@ -956,6 +990,10 @@ header{
 
     .myths{
         padding-top: 91px;
+    }
+
+    .intro{
+        background-color: unset;
     }
 
     .flex-div {
@@ -1291,6 +1329,10 @@ header{
         font-size: 25px;
         width: 47px;
         height: 42px;
+    }
+
+    .myths .item-text__title {
+        margin-bottom: 32px;
     }
 }
 
@@ -1867,6 +1909,14 @@ header{
 
     .intro{
         padding-top: 15px;
+    }
+
+    .myths-number{
+        line-height: 52px;
+    }
+
+    .myths .item-text__title {
+        margin-bottom: 25px;
     }
 
 
